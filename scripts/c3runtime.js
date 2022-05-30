@@ -4374,9 +4374,8 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (Math.round((v0.GetValue() / 1000)) * 1000);
 		},
-		() => 70,
-		() => 40,
-		() => 90,
+		() => 25,
+		() => 15,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("score:", v0.GetValue());
