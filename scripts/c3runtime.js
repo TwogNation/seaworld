@@ -4013,10 +4013,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.Sprite.Acts.SetX,
-		C3.ScriptsInEvents.Ev_gameover_Event1_Act5,
-		C3.Plugins.Function.Acts.CallExpression,
 		C3.Plugins.Audio.Acts.SetSilent,
-		C3.Plugins.Audio.Cnds.IsSilent
+		C3.Plugins.Audio.Cnds.IsSilent,
+		C3.ScriptsInEvents.Ev_gameover_Event1_Act5,
+		C3.Plugins.Function.Acts.CallExpression
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4375,7 +4375,10 @@ self.C3_ExpressionFuncs = [
 			return () => (Math.round((v0.GetValue() / 1000)) * 1000);
 		},
 		() => 25,
+		() => 40,
 		() => 15,
+		() => "SOUND3",
+		() => 0.3,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("score:", v0.GetValue());
@@ -4384,7 +4387,6 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("BEST: ", v0.GetValue());
 		},
-		() => 0.3,
 		() => "SOUND",
 		() => "SOUND2"
 ];
