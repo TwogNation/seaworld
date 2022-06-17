@@ -4266,13 +4266,13 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 1500);
 		},
-		() => 6,
-		() => 100,
+		() => 8,
+		() => 1000,
 		() => "CreateScoreUp",
 		() => "Particles",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + 100);
+			return () => (v0.GetValue() + 1000);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -4282,6 +4282,12 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
 			return () => (n0.ExpObject() + (644 / v1.GetValue()));
+		},
+		() => 6,
+		() => 100,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + 100);
 		},
 		() => 5,
 		() => 50,
@@ -4365,10 +4371,6 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
 			return () => (v0.GetValue() - v1.GetValue());
-		},
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + 1000);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
