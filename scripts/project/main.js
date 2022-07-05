@@ -17,7 +17,7 @@ runOnStartup(async runtime =>
 		console.log("iFrame Received: " + data);
 		textInstance.text = data;
 	}, false);
-});
+	});
 
 async function OnBeforeProjectStart(runtime)
 {

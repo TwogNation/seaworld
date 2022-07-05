@@ -4266,7 +4266,7 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() - 1500);
 		},
-		() => 8,
+		() => 6,
 		() => 1000,
 		() => "CreateScoreUp",
 		() => "Particles",
@@ -4276,29 +4276,27 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + 1);
+			return () => (v0.GetValue() + 2);
 		},
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
 			return () => (n0.ExpObject() + (644 / v1.GetValue()));
 		},
-		() => 6,
+		() => 5,
 		() => 100,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + 100);
 		},
-		() => 5,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => (v0.GetValue() + 1);
+		},
 		() => 50,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (v0.GetValue() + 50);
-		},
-		() => 30,
-		p => {
-			const v0 = p._GetNode(0).GetVar();
-			return () => (v0.GetValue() + 30);
 		},
 		() => 20,
 		p => {
@@ -4379,6 +4377,7 @@ self.C3_ExpressionFuncs = [
 		() => 25,
 		() => 40,
 		() => 15,
+		() => 30,
 		() => "SOUND3",
 		() => 0.3,
 		p => {
