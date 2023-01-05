@@ -8,10 +8,10 @@ function postText(value){
 
 const scriptsInEvents = {
 
-		async Ev_gameover_Event1_Act5(runtime, localVars)
-		{
-			postText(runtime.globalVars.postMsg)
-		}
+	async Ev_gameover_Event1_Act5(runtime, localVars)
+	{
+		postText(runtime.globalVars.postMsg)
+	}
 
 };
 
