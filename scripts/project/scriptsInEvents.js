@@ -11,12 +11,14 @@ const scriptsInEvents = {
 	async Ev_mainevents_Event2_Act4(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.onMessage = (event) => {
-		if (event.data.startsWith('s:')){
-			const score_ = event.data.split(':')[1];
-			console.log(score_);
-			runtime.globalVars.score = score_;
-			runtime.callFunction("updateScore")
-		}
+		    if (event.data.startsWith('s:')) {
+		        const score_ = event.data.split(':')[1];
+		        console.log("Score received from WebSocket:", score_);
+		        
+		        // Update the in-game score with the score received from the WebSocket
+		        runtime.globalVars.score = parseInt(score_);
+				console.log("Score updated from WebSocket:",  runtime.globalVars.score)
+		    }
 		}
 	},
 
@@ -48,6 +50,11 @@ const scriptsInEvents = {
 	async Ev_gameover_Event1_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.close();
+	},
+
+	async Ev_gameover_Event1_Act6(runtime, localVars)
+	{
+		window.parent.postMessage("WebSocketClosed", "*");
 	},
 
 	async Ev_menu_Event1_Act2(runtime, localVars)
