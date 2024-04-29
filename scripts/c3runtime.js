@@ -4726,13 +4726,13 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Function.Acts.CallFunction,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
 		C3.Plugins.Function.Cnds.OnFunction,
-		C3.ScriptsInEvents.Ev_mainevents_Event20_Act5,
+		C3.ScriptsInEvents.Ev_mainevents_Event21_Act5,
 		C3.Plugins.Sprite.Acts.SetHeight,
 		C3.Plugins.Sprite.Exps.Height,
-		C3.ScriptsInEvents.Ev_mainevents_Event21_Act5,
 		C3.ScriptsInEvents.Ev_mainevents_Event22_Act5,
 		C3.ScriptsInEvents.Ev_mainevents_Event23_Act5,
 		C3.ScriptsInEvents.Ev_mainevents_Event24_Act5,
+		C3.ScriptsInEvents.Ev_mainevents_Event25_Act5,
 		C3.Plugins.Function.Exps.Param,
 		C3.Behaviors.Sin.Acts.SetEnabled,
 		C3.Plugins.Spritefont2.Acts.SetText,
@@ -4759,7 +4759,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.ScriptsInEvents.Ev_gameover_Event1_Act5,
 		C3.ScriptsInEvents.Ev_gameover_Event1_Act6,
 		C3.Plugins.Function.Acts.CallExpression,
-		C3.ScriptsInEvents.Ev_menu_Event1_Act2
+		C3.ScriptsInEvents.Ev_menu_Event3_Act2
 	];
 };
 self.C3_JsPropNameTable = [

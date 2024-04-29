@@ -22,27 +22,27 @@ const scriptsInEvents = {
 		}
 	},
 
-	async Ev_mainevents_Event20_Act5(runtime, localVars)
+	async Ev_mainevents_Event21_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:1000")
 	},
 
-	async Ev_mainevents_Event21_Act5(runtime, localVars)
+	async Ev_mainevents_Event22_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:100")
 	},
 
-	async Ev_mainevents_Event22_Act5(runtime, localVars)
+	async Ev_mainevents_Event23_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:50")
 	},
 
-	async Ev_mainevents_Event23_Act5(runtime, localVars)
+	async Ev_mainevents_Event24_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:20")
 	},
 
-	async Ev_mainevents_Event24_Act5(runtime, localVars)
+	async Ev_mainevents_Event25_Act5(runtime, localVars)
 	{
 		runtime.globalVars.webSocket.send("s:10")
 	},
@@ -57,7 +57,7 @@ const scriptsInEvents = {
 		window.parent.postMessage("WebSocketClosed", "*");
 	},
 
-	async Ev_menu_Event1_Act2(runtime, localVars)
+	async Ev_menu_Event3_Act2(runtime, localVars)
 	{
 		const queryParams = new URLSearchParams(window.location.search)
 		const token = queryParams.get('token');
