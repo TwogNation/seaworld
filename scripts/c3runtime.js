@@ -4801,6 +4801,7 @@ self.C3_JsPropNameTable = [
 	{thoigian: 0},
 	{Text: 0},
 	{ErrorText: 0},
+	{version: 0},
 	{LEVEL: 0},
 	{FRAMES: 0},
 	{AllTime: 0},
@@ -4859,7 +4860,8 @@ self.InstanceType = {
 	Score1: class extends self.ITextInstance {},
 	thoigian: class extends self.ITextInstance {},
 	Text: class extends self.ITextInstance {},
-	ErrorText: class extends self.ITextInstance {}
+	ErrorText: class extends self.ITextInstance {},
+	version: class extends self.ITextInstance {}
 }
 }
 
